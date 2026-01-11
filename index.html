@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlanMyEvent | Your Occasion. Our Plan.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FFFFF0; /* Ivory */
+        color: #1a1a1a;
+      }
+      .font-display {
+        font-family: 'Playfair Display', serif;
+      }
+      .bg-champagne { background-color: #F7E7CE; }
+      .bg-peach { background-color: #FFDAB9; }
+      .text-navy { color: #000033; }
+      .bg-navy { background-color: #000033; }
+      .border-gold { border-color: #D4AF37; }
+      .gradient-premium {
+        background: linear-gradient(135deg, #FFFFF0 0%, #F7E7CE 100%);
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #FFFFF0; }
+      ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+      
+      @keyframes fade-in-up {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      /* Expert Service Staggered Cards */
+      .stagger-card {
+        transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        filter: grayscale(100%);
+      }
+      .stagger-card:hover {
+        filter: grayscale(0%);
+        transform: translateY(-15px) scale(1.02);
+        box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+      }
+      .marker-line {
+        width: 1px;
+        background: linear-gradient(to bottom, #00A884 0%, transparent 100%);
+        height: 60px;
+        margin: 0 auto;
+      }
+      .marker-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #00A884;
+        border-radius: 50%;
+        margin: 0 auto;
+        box-shadow: 0 0 15px #00A884;
+      }
+      
+      .stagger-delay-1 { animation-delay: 0.1s; }
+      .stagger-delay-2 { animation-delay: 0.2s; }
+      .stagger-delay-3 { animation-delay: 0.3s; }
+      .stagger-delay-4 { animation-delay: 0.4s; }
+      .stagger-delay-5 { animation-delay: 0.5s; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

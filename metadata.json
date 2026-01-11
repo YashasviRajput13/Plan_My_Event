@@ -1,0 +1,8 @@
+{
+  "name": "PlanMyEvent by VentureCraft",
+  "description": "A premium, AI-powered event planning platform for the Indian ecosystem, simplifying vendor discovery, booking, and management.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ]
+}
